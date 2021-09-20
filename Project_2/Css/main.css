@@ -3,6 +3,7 @@
     --Logo-color: #19c2b0;
     --back-menu-color: #2c4755;
     --header-color: #637988;
+    --section-background: #f6f6f6;
 }
 /* End Var */
 /* Start Global Rules */
@@ -47,6 +48,7 @@
   width: 100%;
   position: fixed;
   z-index: 1;
+  background-color: white;
 }
 
 .menu .container {
@@ -70,9 +72,10 @@
 
 .menu .container .lines .line:nth-child(2){
     width: 15px;
-}
-
-.menu .container .lines:hover .line:nth-child(2){
+    margin-left: auto;
+  }
+  
+  .menu .container .lines:hover .line:nth-child(2){
     width: 30px;
     animation-duration: 0.5s;
     animation-name: line;
@@ -124,3 +127,74 @@
 
 /* End Menu_div */
 /* End Menu */
+/* Start header */
+.header {
+  background-image: url(../Image/bridge-4582501_1920.jpg);
+  padding: 25% 0;
+}
+
+.header .container { 
+  text-align: center;
+}
+
+.header .container h1{
+  color: var(--Logo-color);
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.header .container p{
+  width: 500px;
+  font-size: larger;
+  margin: auto;
+  color: var(--back-menu-color);
+}
+/* End header */
+/* Start works */
+.works{
+  padding: 60px 0;
+}
+
+.works .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.works .container .work{
+  text-align: center;
+  color: var(--back-menu-color);
+  line-height: 30px;
+}
+
+.works .container .work i{
+  color: var(--Logo-color);
+}
+/* End works */
+/* Start Title */
+.title{
+  text-align: center;
+  position: relative;
+}
+
+.title h1{
+  color: var(--back-menu-color);
+  font-size: 100px;
+  opacity: 25%;
+  font-weight: bolder;
+}
+
+.title p{
+  width: 50%;
+  color: var(--back-menu-color);
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+
+/* End Title */
+/* Start services */
+
+/* End services */
