@@ -220,23 +220,80 @@
 }
 
 .services .container .service .rectangle{
-  width: 200px;
-  height: 222px;
+  width: 300px;
+  height: 333px;
   background-color: var(--section-background);
-  justify-self: center;
-  align-self: end;
+  align-self: center;
   position: relative;
-  
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column: 3;
 }
 
 .services .container .service .rectangle::after{
   content: "";
   background-color: var(--back-menu-color);
-  width: 100px;
+  width: 75px;
   height: calc(100% + 100px);
   top: -50px;
   position: absolute;
-  right: -20%;;
+  right: -10%;;
   z-index: -1;
 }
 /* End services */
+/* Start Portfolio */
+.portfolio .container .folio{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(30% ,1fr));
+  column-gap: 5%;
+}
+
+.portfolio .container .port img{
+  width: 100%;
+  background-color: var(--section-background);
+}
+
+.portfolio .container .port p{
+  line-height: 30px;
+}
+/* End Portfolio */
+/* Start About */
+.about .container .box{
+  display: grid;
+  grid-template-columns: 30% 60%;
+  column-gap: 10%;
+}
+
+.about .container .box .left{
+  width: 90%;
+  height: 100%;
+  background-color: var(--section-background);
+  position: relative;
+}
+
+.about .container .box .left::after{
+  content: "";
+  width: 75px;
+  height: calc(100% - 100px);
+  border: var(--Logo-color) solid;
+  border-width: 0 0 50px 50px;
+  top: -50px;
+  position: absolute;
+  right: -35%;;
+  z-index: -1;
+}
+
+.about .container .box .right .line{
+  width: 60%;
+  height: 5px;
+  background-color: var(--Logo-color);
+}
+
+.about .container .box h5{
+  font-weight: 900;
+}
+
+.about .container .box{
+  line-height: 40px;
+}
+/* End About */
