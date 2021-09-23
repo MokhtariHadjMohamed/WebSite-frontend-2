@@ -59,14 +59,14 @@
 }
 
 .menu .container img{
-    width: 100px;
+    width: 50px;
 }
 
 .menu .container .lines .line{
     width: 30px;
     height: 2px;
     background-color: gray;
-    margin: 5px;
+    margin: 5px 0px;
     
 }
 
@@ -148,7 +148,7 @@
 }
 
 .header .container p{
-  width: 500px;
+  width: 40%;
   font-size: larger;
   margin: auto;
   color: var(--back-menu-color);
@@ -197,6 +197,14 @@
   left: 25%;
 }
 
+@media (max-width: 768px){
+  .title h1{
+    font-size: 75px;
+  }
+  .title p{
+    bottom: -30px;
+  }
+}
 /* End Title */
 /* Start services */
 .services .container .service{
@@ -243,6 +251,17 @@
   right: -10%;;
   z-index: -1;
 }
+
+/* Small */
+@media (max-width: 768px){
+  .services .container .service .rectangle{
+    display: none;
+  }
+
+  .services .container .service{
+    display: block;
+  }
+}
 /* End services */
 /* Start Portfolio */
 .portfolio .container .folio{
@@ -258,6 +277,12 @@
 
 .portfolio .container .port p{
   line-height: 30px;
+}
+
+@media (max-width: 768px) {
+  .portfolio .container .folio{
+    display: block;
+  }
 }
 /* End Portfolio */
 /* Start About */
@@ -298,6 +323,16 @@
 
 .about .container .box{
   line-height: 40px;
+}
+
+@media (max-width: 768px){
+  .about .container .box {
+    display: block;
+  }
+
+  .about .container .box .left{
+    display: none;
+  }
 }
 /* End About */
 /* Start Contact */
